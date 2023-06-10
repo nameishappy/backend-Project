@@ -2,13 +2,14 @@
   "name": "Backend-Project",
   "description": "",
   "scripts": {
+    
     "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "bundlesize": [
     {
-      "path": "./build/vendor.js",
+      "path": "./bin/vendor.js",
       "maxSize": "30 kB"
     }
   ],
