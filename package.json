@@ -2,7 +2,7 @@
   "name": "Backend-Project",
   "description": "",
   "scripts": {
-    "test": "bundlesize",
+    
     "start": "node app.js"
   
   },
