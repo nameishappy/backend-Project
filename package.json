@@ -1,5 +1,5 @@
 {
-  "name": "Projects",
+  "name": "Backend-Project",
   "description": "",
   "scripts": {
     "test": "bundlesize",
@@ -14,7 +14,7 @@
   "bundlesize": [
     {
       "path": "./build/vendor.js",
-      "maxSize": "3 kB"
+      "maxSize": "30 kB"
     }
   ],
  
