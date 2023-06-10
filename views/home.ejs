@@ -1,0 +1,139 @@
+<%- include("partials/header"); -%>
+
+
+
+   <!-- <div class=" colclass">
+ -->
+<!-- <p >.</p>
+   </div> -->
+ 
+  
+   <!-- <div class="colclass2">
+      <img src="images/tubikstudio-ui-design-dark-background-1-1024x768.jpg" class="image"  >
+   </div> -->
+   <!-- style="display:flex; float: right; margin-left:500px" -->
+   <!-- Force next columns to break to new line -->
+ 
+ 
+   
+ <!-- </div> -->
+
+      
+
+<!-- <button type="button" class="btn btn-outline-primary btn-lg"><b><a  style="text-decoration: none;" href="/compose" >Create Your Own Article </a></a></b></button>-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+   <a class="navbar-brand" href="#">
+       <i class="fa fa-magic" aria-hidden="true"></i>
+      Daily Journal</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav ml-auto">
+           <li class="nav-item active">
+               <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="/about">About Us</a>
+           </li>
+          
+           <li class="nav-item">
+               <a class="nav-link" href="/contact" aria-disabled="true">Contact Us</a>
+           </li>
+           <!-- <li class="nav-item">
+               <a class="nav-link btn btn-primary text-light" href="#" aria-disabled="true"></a>
+           </li> -->
+       </ul>
+   </div>
+</nav>
+<!--end navbar-->
+
+<!--first-section-->
+<div class="first-section">
+   <div class="container" >
+       <div class="row justify-content-center">
+           <div class="col-md-9 ">
+            <h1>Do  You  Want to Publish an Pretty Article ?</h1>               <div class="user d-flex align-items-start justify-content-between bg-light p-4 rounded">
+                   <div class="d-flex align-items-start">
+                       <img src="images/WhatsApp Image 2023-05-28 at 13.00.54.jpeg" class="img-fluid rounded-circle" alt="">
+                       <div class="d-block">
+                           <span class="d-block">by <a class="h6" target="_blank" href="https://prasugupta21.github.io/">Prasu Gupta</a></span>
+                           <span class="d-block text-muted">3rd June</span>
+                       </div>
+                   </div>
+                   <span class="badge badge-light-primary"><i class="fa fa-heart" aria-hidden="true"></i> 28</span>
+               </div>
+               <div class="blog-section">
+                  <img src="images/tubikstudio-ui-design-dark-background-1-1024x768.jpg" class="bounce-little img-fluid shadow-sm rounded " alt="">
+                  <p class="lead mt-3">
+                     So you want to publish an article. Maybe you’ve got a great way of organizing your CSS, or you’re a designer who has a method of communicating really well with developers, or you have some insight into how to best use a new technology. </p>
+                  <p>Writing an article can help encourage people to consider another perspective, maybe opening people’s eyes by proving the status quo wrong. It can enable you to share a solution to a difficult problem or help explain a difficult topic in a more simplistic way.  It’s a great way to get people talking about issues that people know exist, but no one is talking about. Writing can help the reader learn new knowledge.There are also benefits to the writer. Writing can be a powerful way to relieve stress, forcing you to process your thoughts and feelings</p>
+                  <h1 class="h2"> Make it engaging</h1>
+                  <p>"There is no doubt that content is king when it comes to online marketing.
+
+                     If you want to drive results for your business, you need to produce high-quality, engaging content that resonates with your audience.
+                     
+                     But creating compelling content can be a challenge — especially if you’re not sure where to start. </p>
+                  <img src="images/Untitled.png" class="img-fluid bounce-little" alt="">
+                  <p class="text-center small text-muted">Engaging Article</p>
+                  <p>"For example, if you’re writing content about social media marketing, you might want to use a headline like;
+
+                     “How to Increase Your Engagement on Social Media.”
+                     
+                     Or if you’re writing about SEO, you might want to use a headline like;
+                     
+                     “How to Optimize Your Content Creation for Google.”"<br>
+                     Here are some tips for writing attention-grabbing headlines:
+                     <ul>
+                        <li>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms</li>
+                        <li>Start right now!!!</li>
+                        <li>Keep it short and sweet</li>
+                        <li>Python Most demanded programming language on the web <3</li>
+                    <li>   Use keywords that people are searching for</li>
+                     </ul>
+                    
+                  </p>
+                  <div class="blockquote-1 bg-light p-4 ">
+                      <blockquote class="blockquote">
+                          <h4 class="mb-0">You will face many defeats in life, but never let yourself be defeated
+                        </h4>
+                        <br>
+                          <footer class="blockquote-footer"> <cite title="Source Title">Maya Angelou</cite></footer>
+                          
+                      </blockquote>
+                  </div>
+                 
+             
+              <hr>
+              <form action="/home" method="post">
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Create Your Own Article</button>
+                  </div>
+                </form> 
+                
+               
+                <hr>
+                <br>       
+<div class="article">
+<h1 >Articles</h1>
+
+
+
+
+
+<% postArr.forEach(function(e){ %>
+   
+<h1> <%= e.title %></h1> 
+<p> <%= (e.content).substring(0,100) + " ..." %>  <a  href="/postarray/<%= e._id %>"  >Read More</a></p> 
+<hr>
+<% }) %>
+</div>
+
+<hr>
+<!-- <button type="submit" class="btn  "><a  class="articleButton" href="/compose">Create Your Own Article</a></button> -->
+
+
+
+<%- include("partials/footer"); -%>
