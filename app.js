@@ -1,7 +1,7 @@
 
 require('dotenv').config();
 const express = require("express");
-const serverlesshttp=require("serverless-http");
+
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 var request = require("request");
